@@ -17,22 +17,10 @@ public class Main {
         System.out.println("Player Profile : ");
         System.out.println("-------------------------------");
 
-        System.out.println("Name    : " + player1.name);
-        System.out.println("Power   : " + player1.power);
-        System.out.println("Speed   : " + player1.speed);
-        System.out.println("Reach   : " + player1.reach);
-        System.out.println("Star    : " + player1.star);
-        System.out.println("Money   : " + player1.money);
-        System.out.println("Health  : " + player1.health);
+        player1.display();
 
         System.out.println("-------------------------------");
 
-        System.out.println("Name    : " + player2.name);
-        System.out.println("Power   : " + player2.power);
-        System.out.println("Speed   : " + player2.speed);
-        System.out.println("Reach   : " + player2.reach);
-        System.out.println("Star    : " + player2.star);
-        System.out.println("Money   : " + player2.money);
-        System.out.println("Health  : " + player2.health);
+        player2.display();
     }
 }

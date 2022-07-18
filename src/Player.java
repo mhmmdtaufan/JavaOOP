@@ -1,21 +1,21 @@
 import java.time.LocalDateTime;
 
 class Player {
-    String name;
-    int power;
-    int speed;
-    int reach;
-    int health;
-    int money;
-    int star;
+    public String name;
+    public int power;
+    public int speed;
+    int reach; // default = public
+    private int health;
+    private int money;
+    int star; // default = public
 
     Player(String playerName) {
-        name = playerName;
-        health = setHealthBasedOnTime();
+        this.name = playerName;
+        this.health = setHealthBasedOnTime();
     }
 
     void setMoney(int playerMoney) {
-        money = star * playerMoney;
+        this.money = this.star * playerMoney;
     }
 
     int setHealthBasedOnTime() {
@@ -34,5 +34,15 @@ class Player {
         }
 
         return tempHealth;
+    }
+
+    void display() {
+        System.out.println("Name    : " + this.name);
+        System.out.println("Power   : " + this.power);
+        System.out.println("Speed   : " + this.speed);
+        System.out.println("Reach   : " + this.reach);
+        System.out.println("Star    : " + this.star);
+        System.out.println("Money   : " + this.money);
+        System.out.println("Health  : " + this.health);
     }
 }
